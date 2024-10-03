@@ -3,37 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Ian Bazán</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <title>Portafolio de Ian Bazan</title>
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a mi Portafolio</h1>
-        <nav>
-            <ul>
-                <li><a href="about.html">Sobre Mí</a></li>
-                <li><a href="projects.html">Proyectos</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section>
-            <h2>Sobre mí</h2>
-            <p>Soy un programador apasionado por la tecnología. Aquí puedes ver algunos de mis proyectos.</p>
-        </section>
-        <section>
-            <h2>Proyectos Destacados</h2>
-            <ul>
-                <li><a href="enlace-a-tu-proyecto1">Proyecto 1</a></li>
-                <li><a href="enlace-a-tu-proyecto2">Proyecto 2</a></li>
-                <li><a href="enlace-a-tu-proyecto3">Proyecto 3</a></li>
-            </ul>
-        </section>
-    </main>
-    <img src="images/ian.png" alt="Eso tilin">
-    <footer>
-        <p>&copy; 2024 Ian Bazan</p>
-    </footer>
+    <div id="intro">Ian Bazán</div>
+    <img id="photo" src="images/ian.png" alt="Ian Bazán">
+
+    <script>
+        // Después de 2 segundos (2000 milisegundos), desvanecer el texto y mostrar la foto
+        setTimeout(() => {
+            // Desvanece el texto
+            document.body.classList.add('fade-out');
+
+            // Después de 1 segundo (tiempo del desvanecimiento), cambia al modo de la imagen
+            setTimeout(() => {
+                document.body.style.backgroundColor = 'black';
+                document.getElementById('intro').style.display = 'none';
+                const photo = document.getElementById('photo');
+                photo.style.display = 'block';  // Asegura que la imagen se muestre
+                photo.classList.add('fade-in');
+            }, 1000);
+        }, 2000); // 2 segundos
+    </script>
 </body>
 </html>

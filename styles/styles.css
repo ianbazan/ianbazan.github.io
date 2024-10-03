@@ -1,31 +1,39 @@
-body {
-    font-family: Arial, sans-serif;
+/* Estilo general del cuerpo */
+body, html {
     margin: 0;
     padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: opacity 1s ease;
 }
 
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 0;
+/* Estilo para el contenedor que muestra el nombre */
+#intro {
+    font-size: 5rem;
     text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: black;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+/* Estilo para la imagen (empieza oculta) */
+#photo {
+    display: none; /* Ahora está inicialmente oculto */
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+/* Animación para el desvanecimiento del texto */
+.fade-out {
+    opacity: 0;
 }
 
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #f1f1f1;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+/* Animación para la aparición de la imagen */
+.fade-in {
+    opacity: 1;
 }
