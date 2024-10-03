@@ -8,21 +8,21 @@
 </head>
 <body>
     <div id="intro">Ian Bazán</div>
-    <img id="photo" src="images/ian.png" alt="Ian Bazán">
 
     <script>
-        // Después de 2 segundos (2000 milisegundos), desvanecer el texto y mostrar la foto
+        // Después de 2 segundos (2000 milisegundos), desvanecer el texto y mostrar la imagen de fondo
         setTimeout(() => {
             // Desvanece el texto
             document.body.classList.add('fade-out');
 
-            // Después de 1 segundo (tiempo del desvanecimiento), cambia al modo de la imagen
+            // Después de 1 segundo (tiempo del desvanecimiento), cambia al modo de la imagen de fondo
             setTimeout(() => {
-                document.body.style.backgroundColor = 'black';
-                document.getElementById('intro').style.display = 'none';
-                const photo = document.getElementById('photo');
-                photo.style.display = 'block';  // Asegura que la imagen se muestre
-                photo.classList.add('fade-in');
+                document.body.style.backgroundImage = 'url("images/ian.png")';
+                document.body.style.backgroundSize = 'cover';
+                document.body.style.backgroundPosition = 'center';
+                document.body.style.backgroundRepeat = 'no-repeat';
+                document.getElementById('intro').style.display = 'none'; // Oculta el texto
+                document.body.classList.remove('fade-out');  // Reinicia la opacidad para evitar conflictos
             }, 1000);
         }, 2000); // 2 segundos
     </script>
