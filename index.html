@@ -9,24 +9,183 @@
     <link rel="icon" href="images/egg.ico" type="image/x-icon">
 </head>
 <body>
+    <nav id="sidebar">
+        <ul>
+            <li><a href="#presentacion" title="Inicio">🏠</a></li>
+            <li><a href="#skills" title="Skills">🧩</a></li>
+            <li><a href="#experiencia" title="Experiencia">💼</a></li>
+            <li><a href="#estudios" title="Estudios">🎓</a></li>
+            <li><a href="#proyectos" title="Proyectos">📁</a></li>
+            <li><a href="#certificados" title="Certificados">🎖️</a></li>
+            <li><a href="#contacto" title="Contacto">✉️</a></li>
+        </ul>
+    </nav>
     <div id="intro">Ian Bazán</div>
 
+    <div id="content" style="display: none;">
+        <section id="presentacion">
+            <h2>Presentación</h2>
+            <p>Estudiante de Computación e Informática y acreedor de la Beca BCP, con habilidades en análisis y resolución de problemas, buena comunicación oral, planeación y organización. Interesado en desarrollo front-end y software. Motivado por aprender habilidades nuevas y superarme en ámbitos intelectuales. En mi tiempo libre hago arte y toco música.</p>
+            <ul>
+                <li><strong>DNI:</strong> 73199114</li>
+                <li><strong>Celular:</strong> +51 932 622 725</li>
+                <li><strong>Email:</strong> maysian21@gmail.com</li>
+            </ul>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>FastAPI</li>
+                        <li>Java</li>
+                        <li>SpringBoot</li>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>C#</li>
+                    </ul>
+                </div>
+                <div class="skill-box">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>React</li>
+                        <li>NextJS</li>
+                        <li>HTML & CSS</li>
+                        <li>Bootstrap</li>
+                        <li>Tailwind</li>
+                        <li>Angular</li>
+                        <li>Flutter</li>
+                    </ul>
+                </div>
+                <div class="skill-box">
+                    <h3>AI/ML</h3>
+                    <ul>
+                        <li>TensorFlow</li>
+                        <li>Keras</li>
+                        <li>LangChain</li>
+                        <li>LangGraph</li>
+                        <li>LangSmith</li>
+                        <li>Pandas</li>
+                        <li>NumPy</li>
+                        <li>GNU Octave</li>
+                    </ul>
+                </div>
+                <div class="skill-box">
+                    <h3>Data</h3>
+                    <ul>
+                        <li>Airflow</li>
+                        <li>SQL</li>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                        <li>Grafana</li>
+                        <li>MySQL</li>
+                        <li>Oracle</li>
+                    </ul>
+                </div>
+                <div class="skill-box">
+                    <h3>DevOps/Tools</h3>
+                    <ul>
+                        <li>Docker</li>
+                        <li>AWS</li>
+                        <li>GitHub</li>
+                        <li>GCP</li>
+                        <li>Git</li>
+                        <li>Cisco</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="estudios">
+            <h2>Estudios</h2>
+            <ul>
+                <li><strong>Superiores:</strong> Cibertec - Computación e Informática</li>
+                <li><strong>Inglés intermedio:</strong> ICPNA</li>
+                <li><strong>Secundaria:</strong> C.E.D El Buen Pastor</li>
+            </ul>
+        </section>
+        <section id="experiencia">
+            <h2>Experiencia Laboral</h2>
+            <div class="exp-box">
+                <h3>Valtx – Técnico programador <span class="exp-date">(Abril 2024 - Actualidad)</span></h3>
+                <ul>
+                    <li>Desarrollador front-end del proyecto Kronos (.Net a React), gestión de calendarios, turnos y permisos.</li>
+                    <li>Interfaces con React.js, JavaScript y TypeScript, integración de APIs REST.</li>
+                    <li>Componentes personalizados para Scotiabank, documentación técnica y funcional.</li>
+                    <li>Líder de proyecto (Scrum Master/Product Owner) en app bancaria móvil (Spring Boot y Flutter).</li>
+                    <li>Buenas prácticas de diseño responsivo con Tailwind CSS.</li>
+                    <li>Pruebas y aseguramiento de calidad (QA).</li>
+                    <li>Colaboración con equipos multidisciplinarios.</li>
+                </ul>
+            </div>
+            <div class="exp-box">
+                <h3>Ralph’s, cocina <span class="exp-date">(Febrero 2024 - Marzo 2024)</span></h3>
+                <ul>
+                    <li>Gestión de limpieza en la cocina.</li>
+                    <li>Preparación de platos fast food.</li>
+                    <li>Limpiar, cortar y preparar alimentos.</li>
+                    <li>Inventario de stock de implementos y alimentos.</li>
+                </ul>
+            </div>
+            <div class="exp-box">
+                <h3>Autocine Lima Park, asistente de cocina <span class="exp-date">(Septiembre 2021 - Noviembre 2021)</span></h3>
+                <ul>
+                    <li>Limpiar y ordenar la cocina y los utensilios.</li>
+                    <li>Gestionar el control de los pedidos.</li>
+                    <li>Preparación de platos listos para servir.</li>
+                    <li>Inventario de stock de implementos y alimentos.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <div class="project-box">
+                <h3>Portafolio</h3>
+                <a href="https://ianbazan.github.io" target="_blank">https://ianbazan.github.io</a>
+            </div>
+            <div class="project-box">
+                <h3>Pilecola - Sitio web sobre películas</h3>
+                <a href="https://pilecola.netlify.app" target="_blank">https://pilecola.netlify.app</a>
+            </div>
+        </section>
+        <section id="certificados">
+            <h2>Certificaciones</h2>
+            <ul>
+                <li>Máster en JavaScript</li>
+                <li>Finanzas personales</li>
+                <li>Python avanzado</li>
+                <li>Bootstrap</li>
+                <li>Labor social</li>
+                <li>User Experience Design</li>
+                <li>Wireframes digitales con Figma</li>
+            </ul>
+            <p>Próximamente: imágenes y links de los certificados.</p>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <ul>
+                <li><strong>Email:</strong> maysian21@gmail.com</li>
+                <li><strong>LinkedIn:</strong> (agrega tu link aquí)</li>
+                <li><strong>GitHub:</strong> <a href="https://ianbazan.github.io" target="_blank">ianbazan.github.io</a></li>
+            </ul>
+        </section>
+    </div>
+
     <script>
-        // Después de 2 segundos (2000 milisegundos), desvanecer el texto y mostrar la imagen de fondo
+        // Después de 2 segundos (2000 milisegundos), desvanecer el texto y mostrar el contenido
         setTimeout(() => {
-            // Desvanece el texto
             document.body.classList.add('fade-out');
 
-            // Después de 1 segundo (tiempo del desvanecimiento), cambia al modo de la imagen de fondo
             setTimeout(() => {
-                document.body.style.backgroundImage = 'url("images/ian.png")';
-                document.body.style.backgroundSize = 'cover';
-                document.body.style.backgroundPosition = 'center';
-                document.body.style.backgroundRepeat = 'no-repeat';
-                document.getElementById('intro').style.display = 'none'; // Oculta el texto
-                document.body.classList.remove('fade-out');  // Reinicia la opacidad para evitar conflictos
+                document.getElementById('intro').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+                document.body.classList.remove('fade-out');
             }, 1000);
-        }, 2000); // 2 segundos
+        }, 2000);
     </script>
 </body>
 </html>
